@@ -1,0 +1,20 @@
+.AdminDashboardLayout {
+  background: #0d0f1c; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0d0f1c 0%, #0d0f1c 50%, #0a0c16 51%, #0a0c16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0d0f1c", endColorstr="#0a0c16",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: linear-gradient(135deg, var(--TopBackgroundColor) 0%, var(--TopBackgroundColor) 50%, var(--BottomBackgroundColor) 50%);
+  min-height: 100vh;
+  height: 100%;
+}
+.AdminDashboardLayout .HYMEAppShell .AdminDashboardNavbar {
+  background: var(--SidebarBackground);
+  box-shadow: var(--SidebarBoxShadow);
+  border-right: none;
+}
+.AdminDashboardLayout .HYMEAppShell .AdminDashboardNavbar.Active {
+  background: var(--SidebarBackgroundActive);
+  z-index: 101;
+}
+.AdminDashboardLayout .HYMEAppShell .mantine-NavLink-icon {
+  margin-right: 1rem;
+}/*# sourceMappingURL=AdminDashboardLayout.css.map */

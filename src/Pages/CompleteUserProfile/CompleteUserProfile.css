@@ -1,0 +1,29 @@
+.CompleteProfilePage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CompleteProfilePage .CompleteProfileCard {
+  width: 300px;
+  background: transparent;
+  border-color: var(--White);
+}
+.CompleteProfilePage .CompleteProfileCard .CompleteProfileAvatarSection .Avatar .mantine-Avatar-placeholder {
+  background-image: var(--Gradient1);
+}
+.CompleteProfilePage .CompleteProfileCard .CompleteProfileAvatarSection div {
+  cursor: pointer;
+}
+.CompleteProfilePage .CompleteProfileCard .WalletAddressInput input {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.AvatarLibrary .AvatarLibraryCard {
+  transition: 0.6s ease-in-out;
+}
+.AvatarLibrary .AvatarLibraryCard:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}/*# sourceMappingURL=CompleteUserProfile.css.map */

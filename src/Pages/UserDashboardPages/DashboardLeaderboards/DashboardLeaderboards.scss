@@ -1,0 +1,45 @@
+.DashboardLeaderboards{
+    .LeaderboardCard{
+        position: relative;
+        cursor: pointer;
+        transition: .5s ease;
+
+        &::before{
+            position: absolute;
+            content: '';
+            background: rgba(255, 255, 255, 0.1);
+            top: 0;
+            left:  -300px;
+            height: 100%;
+            width: 50px;
+            transform: skewX(-40deg);
+            transition: 1s ease;
+        }
+
+        &:hover::before{
+            left: 200%;
+        }
+    }
+
+    .LeaderboardTopCard{
+        background: var(--LeaderboardTopCard);
+
+        &:hover{
+            scale: 1.050;
+        }
+    }
+
+    .LeaderboardContainer{        
+        & .Me{
+            background: var(--Violet) !important;
+        }
+
+        .LeaderboardNormalCard{
+            background: var(--BasicBorder);
+
+            &:hover{
+                scale: 1.010;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.SelectedProjectPage{
+    background: var(--Black);
+
+    min-height: 100vh;
+    height: 100%;
+
+    .mantine-Text-root{
+        transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-property: font-size;
+        transform-origin: center;
+    }
+
+    a.active{
+        background: var(--Gradient1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        .mantine-Text-root {
+            font-size: 32px;
+        }
+    }
+}

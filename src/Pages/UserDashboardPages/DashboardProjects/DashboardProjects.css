@@ -1,0 +1,76 @@
+.DashboardProjectsPage .mantine-Tabs-tabsList {
+  border-bottom: 0px;
+}
+.DashboardProjectsPage .mantine-Tabs-tabsList {
+  gap: 30px;
+}
+.DashboardProjectsPage .mantine-Tabs-tab:hover {
+  background-color: var(--CardSolidBackground);
+  border-radius: 4px;
+}
+.DashboardProjectsPage .mantine-Tabs-tab[data-active] {
+  position: relative;
+  background-color: transparent;
+}
+.DashboardProjectsPage .mantine-Tabs-tab[data-active]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--White);
+}
+.DashboardProjectsPage .mantine-Tabs-tab[data-active], .DashboardProjectsPage .mantine-Tabs-tab[data-active][data-active]:hover {
+  background-color: transparent;
+}
+.DashboardProjectsPage .mantine-Divider-labelDefaultStyles::after {
+  height: 3px;
+  background: red;
+  border: 0px;
+  border-radius: 100px;
+  background: var(--Gradient1);
+}
+
+.CustomStylingForDropZone[data-idle] {
+  border-color: var(--BasicBorder);
+  background: var(--CardGradientBackground);
+}
+.CustomStylingForDropZone[data-idle]:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.AddItem {
+  background: var(--CardGradientBackground);
+  border: 0.125rem dashed var(--BasicBorder);
+  border-radius: 0.25rem;
+  min-height: 13.75rem;
+  cursor: pointer;
+}
+.AddItem:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.CMSModal .mantine-Modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: saturate(180%) blur(3px);
+          backdrop-filter: saturate(180%) blur(3px);
+}
+.CMSModal .mantine-Modal-content {
+  border: 1px solid var(--BasicBorder);
+}
+.CMSModal .mantine-Modal-content, .CMSModal .mantine-Modal-header, .CMSModal .mantine-Modal-body {
+  background-color: var(--ModalBackground);
+}
+
+.Filled {
+  background: var(--CardGradientBackground);
+  border: 0.125rem solid var(--BasicBorder);
+  border-radius: 0.25rem;
+  min-height: 13.75rem;
+  cursor: pointer;
+  padding: 12px;
+}
+.Filled:hover {
+  background: rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=DashboardProjects.css.map */

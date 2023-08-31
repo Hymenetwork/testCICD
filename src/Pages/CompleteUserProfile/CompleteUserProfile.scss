@@ -1,0 +1,39 @@
+.CompleteProfilePage{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .CompleteProfileCard{
+        width: 300px;
+        background: transparent;
+        border-color: var(--White);
+
+        .CompleteProfileAvatarSection{
+            .Avatar{
+                .mantine-Avatar-placeholder{
+                    background-image: var(--Gradient1);
+                }
+            }
+
+            div{
+                cursor: pointer;
+            }
+        }
+
+        .WalletAddressInput input{
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.AvatarLibrary{
+    .AvatarLibraryCard{
+        transition: .6s ease-in-out;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}

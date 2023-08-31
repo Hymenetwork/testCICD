@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;400;600;700&display=swap");
+:root {
+  --BackgroundColor: #1a1a1a;
+  --Gradient1: linear-gradient(87deg, #FCCB73 0%, #BA51FA 56.25%, #553CEE 89.58%);
+  --TopBackgroundColor: #0D0F1C;
+  --BottomBackgroundColor: #0A0C16;
+  --AvatarBackground: rgba(186, 81, 250, 0.21);
+  --BasicBorder: #303241;
+  --CardGradientBackground: linear-gradient(180deg, #171822 0%, #171822 100%);
+  --CardSolidBackground: #151823;
+  --SidebarBackground: rgba(18, 19, 28, 0.90);
+  --SidebarBackgroundActive: linear-gradient(360deg, rgba(18, 19, 28, 0.50) 0%, rgba(18, 19, 28, 1) 70%);
+  --SidebarActiveItem: linear-gradient(90deg, rgba(85,60,238,0.1) 0%, rgba(128,112,228,0.0) 100%);
+  --SidebarActiveItemBorder: linear-gradient(#3BBFF0, #553CEE) 1 100%;
+  --SidebarBoxShadow: 8px 4px 37px 0px rgba(255, 255, 255, 0.06);
+  --LeaderboardTopCard: rgba(85, 60, 238, 0.24);
+  --ModalBackground: #0A0D16;
+  --White: #fff;
+  --Black: #000;
+  --Violet: #553CEE;
+  --VioletSecondary: #4835c7;
+  --Red: #FF5668;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Icon {
+  width: 18px;
+  height: 18px;
+}
+
+.PageContainer {
+  padding: 1rem;
+  margin-top: 3.75rem;
+}
+
+.GradientButton {
+  color: var(--White);
+  font-weight: 400;
+  border: 0px;
+  transition: all 0.8s ease-in-out;
+  background: var(--Gradient1);
+  background-image: var(--Gradient1);
+  background-size: 100% 100%;
+}
+.GradientButton:hover {
+  background-position: right center;
+  background-size: 150% 150%;
+  transition: all 0.8s ease-in-out;
+}
+
+.PrimaryButton {
+  color: var(--White);
+  font-weight: 400;
+  border: 0px;
+  transition: all 0.8s ease-in-out;
+  background: var(--Violet);
+}
+.PrimaryButton:hover {
+  background: var(--VioletSecondary);
+}
+
+.OutlineButton {
+  color: var(--White);
+  font-weight: 400;
+  border-color: var(--White);
+  width: 220px;
+  padding: 18px;
+  height: unset;
+}
+
+.HYMEBackground {
+  background: #0d0f1c; /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #0d0f1c 0%, #0d0f1c 50%, #0a0c16 51%, #0a0c16 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#0d0f1c", endColorstr="#0a0c16",GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: linear-gradient(135deg, var(--TopBackgroundColor) 0%, var(--TopBackgroundColor) 50%, var(--BottomBackgroundColor) 50%);
+}
+
+.Hyme-Form-Element .mantine-FileInput-input, .Hyme-Form-Element .mantine-Input-input {
+  background: var(--CardGradientBackground);
+  border-color: var(--BasicBorder);
+}
+
+.HYMECard {
+  background: var(--CardGradientBackground);
+}/*# sourceMappingURL=App.css.map */
